@@ -1,0 +1,45 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main()
+{
+
+	int n;
+	int i;
+	int nth;
+	int a = 0;
+	int b = 1;
+
+
+	cout << "The Fibonacci Sequence." << endl;
+
+	cout << endl;
+	cout << endl;
+
+	cout << "Enter the number of terms: ";
+	cin >> n;
+
+
+	for (i = 0; i < n ; i++ )
+	{
+		if (i < 2 && n >= 0)
+			nth = i;
+
+		else if (i >= 2 && n >= 0)
+		{
+			nth = a + b;
+			a = b;
+			b = nth;
+		}
+
+		cout << nth << endl;
+
+	}
+
+
+
+	_getch();
+	return 0;
+}
