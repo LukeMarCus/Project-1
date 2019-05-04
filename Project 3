@@ -1,0 +1,81 @@
+#include<iostream>
+#include<conio.h>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+	double a;
+	double b;
+	double c;
+
+	cout << "----------------------------------------" << endl;
+	cout << "Water bill calculator" << endl;
+	cout << "----------------------------------------" << endl;
+
+	cout << endl;
+	cout << endl;
+
+	cout << "----------------------------------------" << endl;
+	cout << "The reading from the previous is month is: ";
+	cin >> a;
+	cout << "----------------------------------------" << endl;
+
+	cout << endl;
+	cout << endl;
+
+	cout << "----------------------------------------" << endl;
+	cout << "The recent reading is: ";
+	cin >> b;
+	cout << "----------------------------------------" << endl;
+
+	cout << endl;
+	cout << endl;
+
+	if (a > b)
+		cout << "invalid inputs. Close and run the program again";
+	else if (a<0)
+		cout << "invalid inputs. Close and run the program again";
+	else if (b < 0)
+		cout << "invalid inputs. Close and run the program again";
+
+	else
+	{
+		cout << "----------------------------------------" << endl;
+		cout << "The unpaid balance is: " << endl;
+		cin >> c;
+		cout << "----------------------------------------" << endl;
+
+		cout << endl;
+		cout << endl;
+
+		if (c == 0)
+		{
+			cout << fixed << showpoint << setprecision(2);
+			cout << "The recent water bill is P" << ((b - a)*1.10) + 35;
+		}
+
+		else if (c < 0)
+		{
+			cout << fixed << showpoint << setprecision(2);
+			cout << "The recent water bill is P" << ((b - a)*1.10) + 35;
+		}
+
+		else
+		{
+			cout << fixed << showpoint << setprecision(2);
+			cout << "The recent water bill is P" << ((b - a)*1.10) + 55+c;
+		}
+	}
+
+
+
+
+
+
+
+
+	_getch();
+	return 0;
+}
