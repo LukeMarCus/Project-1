@@ -1,0 +1,56 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+	double a;
+	double b;
+	double c;
+
+	cout << "---------------------------"<< endl;
+	cout << "Provide three numbers." << endl;
+	cout << "---------------------------";
+
+	cout << endl;
+	cout << endl;
+
+	cout << "First number: ";
+	cin >> a;
+
+	cout << "Second number: ";
+	cin >> b;
+
+	cout << "Thrird number: ";
+	cin >> c;
+
+	cout << endl;
+	cout << endl;
+
+	if (a > b && a > c)
+		cout << " The largest number is " << a << ".";
+	else if (b > a && b > c)
+		cout << " The largest number is " << b << ".";
+	else if (c > a && c > b)
+		cout << " The largest number is either " << c << ".";
+	else if (a > b && a == c)
+		cout << " The largest number is either " << a << " or " << c << ".";
+	else if (a > c && a == b)
+		cout << " The largest number is either " << a << "or" << b << ".";
+	else if (b > a && b == c)
+		cout << " The largest number is either " << b << "or" << c << ".";
+	else if (b == a && b == c)
+		cout << " Pare-parehas sila pre. ";
+
+
+	
+
+
+
+
+
+
+
+	_getch();
+	return 0;
+}
