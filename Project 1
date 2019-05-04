@@ -1,0 +1,120 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main()
+{
+
+	int choice;
+	double a;
+
+
+	cout << "----------------------------------------" << endl;
+	cout << "What package did you purchased?" << endl;
+	cout << "----------------------------------------" << endl;
+
+	cout << endl;
+	cout << endl;
+
+	cout << "1. Package A" << endl;
+	cout << "2. Package B" << endl;
+	cout << "3. Package C" << endl;
+
+	cout << endl;
+	cout << endl;
+
+	cin >> choice;
+
+	cout << endl;
+	cout << endl;
+
+	switch (choice)
+	{
+	case 1:
+		cout << "----------------------------------------" << endl;
+		cout << "Total time used: ";
+		cin >> a;
+		cout << "----------------------------------------" << endl;
+
+		cout << endl;
+		cout << endl;
+
+		if (a > 720)
+			cout << "You are in Midgard, provide a valid number of hours per month.";
+
+		else if (a < 0)
+			cout << "You are in Midgard, provide a valid number of hours per month.";
+
+		else
+		{
+			cout << "The total amount due is P";
+
+			if (a > 10)
+				cout << ((a - 20) * 20) + 995;
+
+			else
+				cout << 1495;
+		}
+
+
+		break;
+
+	case 2:
+		cout << "----------------------------------------" << endl;
+		cout << "Total time used: ";
+		cin >> a;
+		cout << "----------------------------------------" << endl;
+
+		cout << endl;
+		cout << endl;
+
+		if (a > 720)
+			cout << "You are in Midgard, provide a valid number of hours per month.";
+
+		else if (a < 0)
+			cout << "You are in Midgard, provide a valid number of hours per month.";
+
+		else
+		{
+			cout << "The total amount due is P";
+
+			if (a > 20)
+				cout << ((a - 20) * 20) + 1495;
+
+			else
+				cout << 1495;
+		}
+		break;
+
+	case 3:
+		cout << "----------------------------------------" << endl;
+		cout << "Total time used: ";
+		cin >> a;
+		cout << "----------------------------------------" << endl;
+
+		cout << endl;
+		cout << endl;
+
+		if (a > 720)
+			cout << "You are in Midgard, provide a valid number of hours per month.";
+
+		else if (a < 0)
+			cout << "You are in Midgard, provide a valid number of hours per month.";
+
+		else
+		{
+			cout << "The total amount due is P1995.";
+		}
+
+		break;
+
+
+	}
+
+
+
+	_getch();
+	return 0;
+
+}
